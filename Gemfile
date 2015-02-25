@@ -1,3 +1,3 @@
 group :test do
-  gem 'simplecov'
+  gem "simplecov", "~> 0.9.1", :require => false
 end
