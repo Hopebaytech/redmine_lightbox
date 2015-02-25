@@ -1,3 +1,8 @@
+module RedmineLightbox
+  DEFER_CONVERT = Rails.env != 'test' && defined?(Resque)
+end
+
+require 'redmine_lightbox/patches/application_helper_patch'
 require 'redmine_lightbox/patches/issues_helper_patch'
 
 require 'redmine_lightbox/hooks/view_layouts_base_html_head_hook'
